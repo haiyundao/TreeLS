@@ -26,6 +26,7 @@
 #' @import deldir
 #' @import nabor
 #' @import glue
+#' @import terra
 #' @useDynLib TreeLS, .registration = TRUE
 
 utils::globalVariables(c("."))
