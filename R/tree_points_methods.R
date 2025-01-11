@@ -7,6 +7,8 @@ trp.voronoi = function(){
 
   func = function(las, xymap){
     xt = ext(las) + c(-1,1,-1,1)
+    print(xt)
+    print(extent(xt[1:4]))
     v_poly = voronoi(xymap[,2:3], extent(xt[1:4]))
     v_poly$id = xymap$TreeID
     names(v_poly) = 'TreeID'
